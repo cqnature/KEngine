@@ -150,7 +150,7 @@ namespace KEngine
 #if UNITY_2017_1_OR_NEWER
             UnityEngine.Profiling.Profiler.BeginSample(strName);
 #else
-            Profiler.BeginSample(strName);
+            UnityEngine.Profiling.Profiler.BeginSample(strName);
 #endif
         }
 
@@ -160,7 +160,7 @@ namespace KEngine
 #if UNITY_2017_1_OR_NEWER
             UnityEngine.Profiling.Profiler.EndSample();
 #else
-            Profiler.EndSample();
+            UnityEngine.Profiling.Profiler.EndSample();
 #endif
         }
     }
